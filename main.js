@@ -7,6 +7,7 @@ let icon = document.getElementById("icon");
 let temperature = document.getElementById("temp");
 let humidity = document.getElementById("humidity-div");
 
+
 searchButton.addEventListener("click", findWeatherDetails);
 searchInput.addEventListener("keyup", enterPressed);
 
