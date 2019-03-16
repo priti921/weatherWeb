@@ -5,7 +5,7 @@ let searchInput = document.getElementById("search-txt");
 let cityName = document.getElementById("city-name");
 let icon = document.getElementById("icon");
 let temperature = document.getElementById("temp");
-let humidity = document.getElementById("humidity-div");
+let humidity = document.getElementById("humid");
 
 
 searchButton.addEventListener("click", findWeatherDetails);
@@ -36,7 +36,6 @@ function theResponse(response) {
 
 function httpRequestAsync(url, callback)
 {
-  console.log("hello");
     var httpRequest = new XMLHttpRequest();
     httpRequest.onreadystatechange = () => { 
         if (httpRequest.readyState == 4 && httpRequest.status == 200)
